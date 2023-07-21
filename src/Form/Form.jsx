@@ -205,9 +205,9 @@ const Form = () => {
           <h2>CONTACT INFO</h2>
         </div>
         <form action="" className="form2">
-          <label htmlFor="contact1">Contact 1</label><br />
+          <label htmlFor="contact1">Contact 1</label>
           <input
-            type="text"
+            type="text" 
             id="contact1"
             placeholder="Name of Contact"
             ref={contact1NameRef}
@@ -216,8 +216,8 @@ const Form = () => {
             type="phone"
             placeholder="Phone Number"
             ref={contact1PhoneRef}
-          /><br />
-          <label htmlFor="contact2">Contact 2</label><br />
+          />
+          <label htmlFor="contact2">Contact 2</label>
           <input
             type="text"
             id="contact2"
@@ -229,7 +229,7 @@ const Form = () => {
             placeholder="Phone Number"
             ref={contact2PhoneRef}
           /><br />
-          <label htmlFor="contact3">Contact 3 (if any)</label><br />
+          <label htmlFor="contact3">Contact 3 (if any)</label>
           <input
             type="text"
             id="contact3"
