@@ -51,12 +51,12 @@ const Form = () => {
       return;
     }
   
-    const isPhoneNumberValid = /^[\d-+()]+$/.test(
-      contact1PhoneRef.current.value
-    ) && /^[\d-+()]+$/.test(contact2PhoneRef.current.value);
+    const isPhoneNumberValid =
+    /^\d{10}$/.test(contact1PhoneRef.current.value) &&
+    /^\d{10}$/.test(contact2PhoneRef.current.value);
   
     if (!isPhoneNumberValid) {
-      alert("Invalid phone number format. Please use digits, dashes, and parentheses only.");
+      alert("Invalid phone number format. Please use 10 digits.");
       return;
     }
   
