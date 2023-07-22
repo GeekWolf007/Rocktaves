@@ -12,7 +12,7 @@ const Form = () => {
   const contact2PhoneRef = useRef(null);
   const contact3NameRef = useRef(null);
   const contact3PhoneRef = useRef(null);
-  const venueRef = useRef(null);
+  const emailRef = useRef(null);
 
   const [selectedVenue, setSelectedVenue] = useState("");
 
@@ -59,32 +59,32 @@ const Form = () => {
       alert("Invalid phone number format. Please use 10 digits.");
       return;
     }
+    const emailValue = emailRef.current.value;
+    const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailValue);
+    if (!isEmailValid) {
+      alert("Invalid email address format.");
+      return;
+    }
   
     const formData = {
-      bandName: bandNameRef.current.value,
-      numberOfMembers: numberOfMembersValue,
-      yearOfInception: yearOfInceptionValue,
-      cityBasedIn: cityBasedInRef.current.value,
+      name: bandNameRef.current.value,
+      number_of_members: numberOfMembersValue,
+      music_since: JSON.stringify(yearOfInceptionValue),
+      city: cityBasedInRef.current.value,
       venue: selectedVenue,
-      contacts: [
-        {
-          name: contact1NameRef.current.value,
-          phone: contact1PhoneRef.current.value,
-        },
-        {
-          name: contact2NameRef.current.value,
-          phone: contact2PhoneRef.current.value,
-        },
-        {
-          name: contact3NameRef.current.value,
-          phone: contact3PhoneRef.current.value,
-        },
-      ],
+      phone: contact1PhoneRef.current.value,
+      phone2: contact2PhoneRef.current.value,
+      phone3: contact3PhoneRef.current.value,
+      name1: contact1NameRef.current.value,
+      name2: contact2NameRef.current.value,
+      name3: contact3NameRef.current.value,
+      email_address: emailRef.current.value,
     };
   
-    const apiUrl = "api link";
+    const apiUrl = "https://bits-oasis.org/2023/main/preregistrations/RoctavesOnlineReg/";
   
     console.log(formData);
+    console.log(JSON.stringify(formData))
     fetch(apiUrl, {
       method: "POST",
       headers: {
@@ -95,6 +95,11 @@ const Form = () => {
       .then((response) => response.json())
       .then((data) => {
         console.log("API Response:", data);
+        if(data["status"] == 1){
+          alert("Your registration is complete!")
+        }else{
+          alert("There was some error! Please try again")
+        }
       })
       .catch((error) => {
         console.error("Error sending data to API:", error);
@@ -128,6 +133,16 @@ const Form = () => {
           />
           <label htmlFor="members" className="form__label">
             NUMBER OF MEMBERS
+          </label>
+  
+          <input
+            type="text"
+            placeholder="Your Email"
+            className="form__input"
+            ref={emailRef}
+          />
+          <label htmlFor="members" className="form__label">
+            Your Email
           </label>
 
           <input
