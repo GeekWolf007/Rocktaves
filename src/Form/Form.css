@@ -234,6 +234,9 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: #C20114;
   opacity: 1;
 }
+.inner_venue{
+  display: flex;
+}
 
 @media (min-width: 1000px){
   .buttonContainer{
@@ -248,12 +251,21 @@ input[type=number]::-webkit-outer-spin-button {
     min-height: 80vh;
   }
 }
+@media (min-width: 1200px){
+  .inner_venue{
+    display: flex;
+  }
+}
 @media (max-width: 1000px){
   #root{
     flex-direction: column;
   }
   .buttonContainer{
     margin-top: 2rem;
+  }
+  .inner_venue{
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 700px){

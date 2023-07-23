@@ -167,6 +167,7 @@ const Form = () => {
 
           <div className="venue">
             <p className="venue__para">Venue you can contest in</p>
+            <div className="inner_venue">
             <input
               type="radio"
               name="venue"
@@ -202,6 +203,15 @@ const Form = () => {
               onChange={handleVenueChange}
               checked={selectedVenue === "MUMBAI"}
             />
+            <label htmlFor="kolkata">KOLKATA</label>
+            <input
+              type="radio"
+              name="venue"
+              value="KOLKATA"
+              id="kolkata"
+              onChange={handleVenueChange}
+              checked={selectedVenue === "KOLKATA"}
+            />
             <label htmlFor="mumbai">MUMBAI</label>
             <input
               type="radio"
@@ -212,6 +222,7 @@ const Form = () => {
               checked={selectedVenue === "ONLINE"}
             />
             <label htmlFor="online">ONLINE</label>
+            </div>
           </div>
         </form>
       </div>
