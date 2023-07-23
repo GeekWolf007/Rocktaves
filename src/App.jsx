@@ -1,10 +1,12 @@
 import React from "react"
-import Form from "./Form/Form.jsx";
+import LandingPage from "./Components/LandingPage";
+import Form from "./Form/Form"
 
 function App() {
 
   return (
     <React.Fragment>
+      {/* <LandingPage /> */}
       <Form />
     </React.Fragment>
   )

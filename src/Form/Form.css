@@ -1,20 +1,4 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'RocknRoll One', sans-serif;
-  user-select: none;
-}
-html {
-  position: relative;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-  background-color: #FFFCFF;
-}
-body {
+.form_body{
   margin: 0;
   padding: 0;
   background-image: 
@@ -29,16 +13,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-#root{
+.formContainer{
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 2rem;
   width: 100vw;
-}
-h1 {
-  font-size: clamp(1rem, 6vw, 10rem);
-  margin: 15vh 0 2rem;
 }
 .container {
   width: 60vw;
@@ -247,7 +227,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     justify-content: center;
   }
-  #root{
+  .formContainer{
     min-height: 80vh;
   }
 }
@@ -257,7 +237,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 @media (max-width: 1000px){
-  #root{
+  .formContainer{
     flex-direction: column;
   }
   .buttonContainer{

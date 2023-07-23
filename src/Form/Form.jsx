@@ -109,7 +109,8 @@ const Form = () => {
   
 
   return (
-    <React.Fragment>
+    <div className="form_body">
+      <div className="formContainer">
       <div className="container">
         <div className="rocktaves__form">
           <h2>BAND INFO</h2>
@@ -203,7 +204,7 @@ const Form = () => {
               onChange={handleVenueChange}
               checked={selectedVenue === "MUMBAI"}
             />
-            <label htmlFor="kolkata">KOLKATA</label>
+            <label htmlFor="mumbai">MUMBAI</label>
             <input
               type="radio"
               name="venue"
@@ -212,7 +213,7 @@ const Form = () => {
               onChange={handleVenueChange}
               checked={selectedVenue === "KOLKATA"}
             />
-            <label htmlFor="mumbai">MUMBAI</label>
+            <label htmlFor="kolkata">KOLKATA</label>
             <input
               type="radio"
               name="venue"
@@ -274,7 +275,8 @@ const Form = () => {
           REGISTER
         </button>
       </div>
-    </React.Fragment>
+      </div>
+    </div>
   );
 };
 

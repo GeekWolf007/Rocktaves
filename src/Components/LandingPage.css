@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'RocknRoll One', sans-serif;
+  user-select: none;
+}
+html {
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #FFFCFF;
+}
+.landingPageWrapper{
+  width: 100vw;
+  min-height: 100vh;
+}
+.headingWrapper{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
