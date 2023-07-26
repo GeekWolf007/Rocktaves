@@ -35,7 +35,7 @@ html {
   -moz-scroll-snap-type: y mandatory;
 }
 section{
-  overflow-x: hidden;
+  overflow: hidden;
   scroll-snap-align: start;
   -moz-scroll-snap-align: start;
   scroll-snap-stop: always;

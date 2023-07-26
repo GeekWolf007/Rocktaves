@@ -8,7 +8,8 @@
   height: 100vh;
   background: rgba(20, 20, 7, 0.5);
   position: relative;
-  padding: 3% 5% 12% 5%;
+  padding: 3% 5% 5% 5%;
+  overflow: hidden;
 }
 .aboutUsHeading{
   color: #FFEB00;
