@@ -12,24 +12,24 @@ const PastWinners = ({Heading , First , Second}) =>{
       {Heading && <h1 className="pastWinnersHeading">PAST WINNERS</h1>}
       {Heading && 
       <div className="firstTwoPastWinners pastWinners">
-        <div className="pastWinner">
+        <div className="pastWinner pastWinner1">
           <h3 className="winnerHeading">{First}</h3>
-          <div className="winnerImg" style={{ background: `url('${indianocean}') center top / cover no-repeat` }} />
+          <div className="winnerImg" style={{ background: `url('${indianocean}') center center / contain no-repeat` }} />
         </div>
-        <div className="pastWinner">
-          <div className="winnerImg" style={{ background: `url('${parikrama}') center top / cover no-repeat` }} />
+        <div className="pastWinner pastWinner4">
+          <div className="winnerImg" style={{ background: `url('${parikrama}') center center / contain no-repeat` }} />
           <h3 className="winnerHeading">{Second}</h3>
         </div>
       </div>}
       {!Heading && 
       <div className="secondTwoPastWinners pastWinners">
-        <div className="pastWinner">
-          <div className="winnerImg" style={{ background: `url('${prestorika}') center top / cover no-repeat` }} />
+        <div className="pastWinner pastWinner4">
+          <div className="winnerImg" style={{ background: `url('${prestorika}') center center / contain no-repeat` }} />
           <h3 className="winnerHeading">{Second}</h3>
         </div>
-        <div className="pastWinner">
+        <div className="pastWinner pastWinner4" >
           <h3 className="winnerHeading">{First}</h3>
-          <div className="winnerImg" style={{ background: `url('${themclones}') center top / cover no-repeat` }} />
+          <div className="winnerImg" style={{ background: `url('${themclones}') center center / contain no-repeat` }} />
         </div>
       </div>}
     </section>

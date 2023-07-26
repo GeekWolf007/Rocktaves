@@ -62,11 +62,21 @@
 }
 .imgContainer{
   width: 100vw;
-  height: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+  background: url(../assets/guy.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 5%;
 }
 .registerImg{
   max-width: 100%;
   max-height: 100%;
+  object-fit: contain;
 }
 .footer{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(../assets/bg2.png);
@@ -84,7 +94,7 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 70%;
 }
 .connect h4{
   font-family: "MetalVengeance";
@@ -100,6 +110,10 @@
 }
 .socials{
   padding-right: 5%;
+  width: 30%;
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 .socials a{
   background-color: transparent;
@@ -108,6 +122,31 @@
 @media (max-width:850px) {
   .registerSection .scroll div{
     font-size: 3rem;
+  }
+}
+@media (max-width:900px) {
+  .connect h4{
+    font-size: 1.75rem;
+  }
+  .contacts p{
+    font-size: 1.4rem;
+  }
+  .socials a svg{
+    width: 1.5em;
+  }
+}
+@media (max-width:600px) {
+  .socials{
+    padding: 0;
+  }
+  .socials a svg{
+    width: 1em;
+  }
+  .connect h4{
+    font-size: 1.5rem;
+  }
+  .contacts p{
+    font-size: 1.2rem;
   }
 }
 @media (max-width:550px) {
@@ -119,5 +158,19 @@
   }
   .text2{
     transform: rotate(-2deg);
+  }
+  .socials{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+  }
+  .connect{
+    width: 89%;
+  }
+}
+@media (max-width:420px) {
+  .connect p{
+    font-size: 1rem;
   }
 }

@@ -36,6 +36,8 @@
 .winnerImg{
   width: 40%;
   height: 100%;
+  background-size: contain;
+  background-position: center;
 }
 .winnerHeading{
   font-size: 5rem;
@@ -49,23 +51,28 @@
   .winnerImg{width: 50%;}
 }
 @media (max-width: 1300px) {
-
+ .winnerHeading{font-size: 4rem;}
 }
 @media (max-width: 1150px) {
-
+  .pastWinnersHeading{
+    font-size: 4.2rem;
+  }
+  .winnerHeading{font-size: 3.5rem;}
 }
 @media (max-width: 1000px) {
-
+  .pastWinners{padding: 0;}
 }
-@media (max-width: 800px) {
-
+@media (max-width: 840px) {
+  .pastWinner{
+    flex-direction: column;
+  }
+  .pastWinner1 h3{order: 2;}
+  .pastWinner4 h3{order: 2;}
+  .winnerImg{width: 100%;}
 }
 @media (max-width: 650px) {
-
-}
-@media (max-width: 500px) {
-
-}
-@media (max-width: 400px) {
-
+  .pastWinnersHeading{
+    font-size: 3rem;
+  }
+  .winnerHeading{font-size: 3rem;}
 }

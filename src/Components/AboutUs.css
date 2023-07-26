@@ -39,3 +39,52 @@
 .textaligncenter{
   text-align: center;
 }
+.paraContainer{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+@media (max-width: 1300px) {
+  .aboutUsPara{
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 1200px) {
+  .aboutUsPara{
+    font-size: 2.45rem;
+  }
+}
+@media (max-width: 1150px) {
+  .aboutUsPara{
+    font-size: 2.1rem;
+  }
+  .aboutUsParaSpan{
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 1000px) {
+  .aboutUsHeading{
+    font-size: 4.2rem;
+  }
+}
+@media (max-width: 900px) {
+  .aboutUsHeading{
+    font-size: 3rem;
+  }
+  .aboutUsPara{
+    font-size: 1.75rem;
+  }
+  .aboutUsParaSpan{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 650px) {
+  .aboutUsPara{
+    font-size: 1.5rem;
+  }
+  .aboutUsParaSpan{
+    font-size: 1.6rem;
+  }
+}
+ 
