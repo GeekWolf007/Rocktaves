@@ -45,3 +45,27 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@media (min-height:800px){
+  .winnerImg{width: 50%;}
+}
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 1150px) {
+
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 800px) {
+
+}
+@media (max-width: 650px) {
+
+}
+@media (max-width: 500px) {
+
+}
+@media (max-width: 400px) {
+
+}
