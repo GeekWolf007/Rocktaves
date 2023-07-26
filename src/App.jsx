@@ -1,15 +1,16 @@
-import React from "react"
+import React from "react";
+import { Routes } from "react-router-dom";
+import { Route } from "react-router-dom";
 import LandingPage from "./Components/LandingPage";
-import Form from "./Form/Form"
+import Form from "./Form/Form";
 
 function App() {
-
   return (
-    <React.Fragment>
-      {/* <LandingPage /> */}
-      <Form />
-    </React.Fragment>
-  )
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/Form" element={<Form />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

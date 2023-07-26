@@ -1,0 +1,58 @@
+.timelineContainer{
+  width: 100vw;
+  height: 200vh;  
+  background: rgba(20, 20, 20, 0.9);
+  position: relative;
+  padding: 5% 5% 12% 5%;
+}
+.timelineHeading{
+  color: #FFEB00;
+  text-align: start;
+  text-shadow: 7px 7px 0px #00EDF5;
+  font-family: "MetalVengeance";
+  font-size: 5.2rem;
+  margin-bottom: 3%;
+}
+.timeline{
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.progressBar{
+  display: flex;
+  justify-content: flex-end;
+  grid-area: 1 / 1 / 4 / 2; 
+  position: relative;
+}
+.default-line{
+  height: inherit;
+  width: 5px;
+  background-color: #00EDF5;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.draw-line{
+  margin-right: 10%;
+  margin-top: 5%;
+  width: 5px;
+  position: absolute;
+  right: 0;
+  background-color: #FFEB00;
+  max-height: 100%;
+}
+
+#card{grid-area: 1/2/4/5;}
+#card{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cards{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}

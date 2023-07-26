@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "MetalVengeance";
+  src: url(../Fonts/MetalVengeance/MetalVengeance.ttf) format("truetype");
+  font-weight: bold;
+ }
+.aboutUsContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 7, 0.5);
+  position: relative;
+  padding: 3% 5% 12% 5%;
+}
+.aboutUsHeading{
+  color: #FFEB00;
+  text-align: center;
+  text-shadow: 7px 7px 0px #FF01D7;
+  font-family: "MetalVengeance";
+  font-size: 5.2rem;
+}
+.aboutUsPara{
+  color: #FFF;
+  font-family: Metal Mania;
+  font-size: 2.75rem;
+}
+.aboutUsParaSpan{
+  background: linear-gradient(90deg, #00EDF5 11.46%, #FFEB00 70.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Metal Mania;
+  font-size: 2.75rem;
+}
+.horizontalLine2 {
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  margin: 2rem 0;
+}
+.textaligncenter{
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "MetalVengeance";
+  src: url(../Fonts/MetalVengeance/MetalVengeance.ttf) format("truetype");
+  font-weight: bold;
+ }
+.rulesContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(20, 20, 7, 0.5);
+  position: relative;
+  padding: 5% 5% 12% 5%;
+}
+.rulesHeading{
+  color: #FFEB00;
+  text-align: end;
+  text-shadow: 7px 7px 0px #FF01D7;
+  font-family: "MetalVengeance";
+  font-size: 5.2rem;
+}
+.rulesPara{
+  color: #FFF;
+  font-family: Metal Mania;
+  font-size: 3rem;
+}
+.rulesParaSpan{
+  background: linear-gradient(90deg, #FFEB00 0%, #FF01D7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Metal Mania;
+  font-size: 3.5rem;
+}
+@media (max-width: 1300px) {
+  .rulesPara{
+    font-size: 2.8rem;
+  }
+  .rulesParaSpan{
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1150px) {
+  .rulesHeading{
+    font-size: 4.2rem;
+  }
+  .rulesPara{
+    font-size: 2.75rem;
+  }
+  .rulesParaSpan{
+    font-size: 2.75rem;
+  }
+}
+@media (max-width: 1000px) {
+  .rulesPara{
+    font-size: 2.5rem;
+  }
+  .rulesParaSpan{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .rulesPara{
+    font-size: 2.25rem;
+  }
+  .rulesParaSpan{
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 650px) {
+  .rulesPara{
+    font-size: 2rem;
+  }
+  .rulesParaSpan{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .rulesPara{
+    font-size: 1.75rem;
+  }
+  .rulesParaSpan{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .rulesPara{
+    font-size: 1.65rem;
+  }
+  .rulesParaSpan{
+    font-size: 1.65rem;
+  }
+}

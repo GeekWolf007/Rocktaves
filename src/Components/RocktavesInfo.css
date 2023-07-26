@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "MetalVengeance";
+  src: url(../Fonts/MetalVengeance/MetalVengeance.ttf) format("truetype");
+  font-weight: bold;
+ }
+.whatIsRocktavesContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(7, 20, 7, 0.5);
+  position: relative;
+  padding: 5% 5% 12% 5%;
+}
+.whatIsRocktavesHeading{
+  color: #FFEB00;
+  text-align: start;
+  text-shadow: 7px 7px 0px #FF01D7;
+  font-family: "MetalVengeance";
+  font-size: 5.2rem;
+}
+.musicBand{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  z-index: -1;
+}
+.horizontalLine{
+  background-color: white;
+  height: 2px;
+  width: 100%;
+  margin: 3rem 0;
+}
+.whatIsRocktavesPara{
+  color: #FFF;
+  font-family: Metal Mania;
+  font-size: 3.5rem;
+  opacity: 0;
+  transform: scale(1);
+}
+.whatIsRocktavesParaSpan{
+  background: linear-gradient(90deg, #FFEB00 0%, #FF01D7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Metal Mania;
+  font-size: 3.5rem;
+}
+@media (max-width: 1120px) {
+  .whatIsRocktavesHeading{
+    font-size: 4.2rem;
+  }
+  .whatIsRocktavesPara{
+    font-size: 3rem;
+  }
+  .whatIsRocktavesParaSpan{
+    font-size: 3rem;
+  }
+}
+@media (max-width: 840px) {
+  .whatIsRocktavesHeading{
+    font-size: 3.2rem;
+  }
+  .whatIsRocktavesPara{
+    font-size: 3rem;
+  }
+  .whatIsRocktavesParaSpan{
+    font-size: 3rem;
+  }
+}
+@media (max-width: 650px) {
+  .whatIsRocktavesHeading{
+    font-size: 3.2rem;
+  }
+  .whatIsRocktavesPara{
+    font-size: 2.5rem;
+  }
+  .whatIsRocktavesParaSpan{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .whatIsRocktavesHeading{
+    font-size: 3.2rem;
+  }
+  .whatIsRocktavesPara{
+    font-size: 2rem;
+  }
+  .whatIsRocktavesParaSpan{
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .whatIsRocktavesHeading{
+    font-size: 3.2rem;
+  }
+  .whatIsRocktavesPara{
+    font-size: 1.75rem;
+  }
+  .whatIsRocktavesParaSpan{
+    font-size: 2rem;
+  }
+}
+@media (max-height: 820px) {
+  .whatIsRocktavesContainer,.rulesContainer{
+    padding-top: 2% !important;
+  }
+  .horizontalLine{
+    margin: 2rem 0 !important;
+  }
+}

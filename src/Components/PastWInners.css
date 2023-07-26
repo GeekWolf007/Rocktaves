@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "MetalVengeance";
+  src: url(../Fonts/MetalVengeance/MetalVengeance.ttf) format("truetype");
+  font-weight: bold;
+ }
+.pastWinnersContainer{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(7, 10, 7, 0.5);
+  position: relative;
+  padding:3% 5% 4% 5%;
+  display: flex;
+  flex-direction: column;
+}
+.pastWinnersHeading{
+  color: #FFEB00;
+  text-align: start;
+  text-shadow: 7px 7px 0px #00EDF5;
+  font-family: "MetalVengeance";
+  font-size: 5.2rem;
+  margin-bottom: 3%;
+}
+.pastWinners{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8% 0 6%;
+}
+.pastWinner{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50%;
+  align-items: center;
+}
+.winnerImg{
+  width: 40%;
+  height: 100%;
+}
+.winnerHeading{
+  font-size: 5rem;
+  font-family: Metal Mania;
+  background: linear-gradient(90deg, #00EDF5 0%, #01FF4F 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
