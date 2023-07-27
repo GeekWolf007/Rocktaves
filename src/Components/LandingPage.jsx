@@ -1,4 +1,5 @@
 import React , {useEffect , useState} from "react";
+import { Link } from "react-router-dom";
 import "./LandingPage.css"
 import Heading from "./Heading";
 import Register from "./Register";
@@ -36,11 +37,6 @@ const LandingPage = ({}) =>{
           },
           { duration: 600, fill: "forwards" }
         );
-        if (event.target.style.cursor === "pointer") {
-          cursorCircle.style.transform = "scale(1.75)";
-        } else {
-          cursorCircle.style.transform = "scale(1)"; 
-        }
       };
     }
     return () => {
@@ -52,6 +48,8 @@ const LandingPage = ({}) =>{
     <div className="landingPageWrapper">
       <div className="cursor" id="cursor"></div>
       <div className="cursorFollower" id="cursorFollower"></div>
+      <div className="registerBtn">REGISTER</div>
+      <Link to="/form" className="registerBtn">REGISTER</Link>
       <section className="headingWrapper">
         <div className="fixedBG"></div>
         <Heading />
@@ -61,7 +59,7 @@ const LandingPage = ({}) =>{
       <Timeline />
       <PastWinners 
         Heading={true}
-        First = {"INIDAN OCEAN"}
+        First = {"INDIAN OCEAN"}
         Second = {"PARIKRAMA"}
       />
       <PastWinners 

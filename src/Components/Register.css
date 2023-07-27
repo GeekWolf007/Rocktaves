@@ -24,9 +24,7 @@
   font-family: 'Poppins', sans-serif;
   animation-delay: -60s;
 }
-.registerSection .scroll:hover{
-  /* cursor: pointer; */
-}
+
 .registerSection .scroll div:nth-child(2){
   animation: animate2 60s linear infinite ;
   animation-delay: -30s;
@@ -65,7 +63,7 @@
   height: 60%;
   display: flex;
   justify-content: center;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
   background: url(../assets/guy.png);
   background-size: contain;
   background-position: center center;
@@ -89,6 +87,7 @@
   align-items: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 999;
 }
 .connect{
   padding-left: 3%;

@@ -99,3 +99,27 @@ a{
   pointer-events: none;
   transform: scale(1);
 }
+.registerBtn{
+    padding: 13px 0;
+    /* border: 1px solid #FF01D7; */
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #FF01D7;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    transition: all .2s ease-in-out;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-family: "MetalVengeance";
+    font-size: 1.5rem;
+    z-index: 99;
+    outline: none;
+    padding: 1rem .8rem;
+    border-radius: 10px;
+}
+.registerBtn:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFEB00;;
+}

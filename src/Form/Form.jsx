@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "../Form/Form.css";
 
-const Form = () => {
+const Form = ({handleGoBack}) => {
   const bandNameRef = useRef(null);
   const numberOfMembersRef = useRef(null);
   const yearOfInceptionRef = useRef(null);
@@ -105,11 +105,11 @@ const Form = () => {
         console.error("Error sending data to API:", error);
       });
   };
-  
-  
+
 
   return (
     <div className="form_body">
+            {/* <div className="btnBack">Back</div> */}
       <div className="formContainer">
       <div className="container">
         <div className="rocktaves__form">
@@ -271,6 +271,9 @@ const Form = () => {
         </form>
       </div>
       <div className="buttonContainer">
+        <button className="submitBtn" onClick={handleGoBack}>
+          BACK
+        </button>
         <button type="submit" className="submitBtn" onClick={handleSubmit}>
           REGISTER
         </button>
