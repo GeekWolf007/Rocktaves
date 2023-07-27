@@ -13,7 +13,6 @@ const LandingPage = ({}) =>{
   useEffect(() => {
     const cursor = document.getElementById("cursor");
     const cursorCircle = document.getElementById("cursorFollower");
-    console.log(cursorCircle)
 
 
     if (window.innerWidth >= 1000) {
@@ -37,17 +36,17 @@ const LandingPage = ({}) =>{
           },
           { duration: 600, fill: "forwards" }
         );
+        if (event.target.style.cursor === "pointer") {
+          cursorCircle.style.transform = "scale(1.75)";
+        } else {
+          cursorCircle.style.transform = "scale(1)"; 
+        }
       };
     }
     return () => {
       window.onpointermove = null;
     };
   }, []);
-
-
-
-
-
 
   return (
     <div className="landingPageWrapper">

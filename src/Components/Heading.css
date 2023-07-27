@@ -15,7 +15,7 @@
   text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
   animation: rocktavesHeading 725ms infinite;
   transition: all .8s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* color: #FFEB00;
   -webkit-text-stroke: 5px #000; */
 }
