@@ -67,7 +67,7 @@ const Timeline = () =>{
             }}>
               <div className="card-border"></div>
               <div className="card-content">
-                <h3>STEP 1: <span>REGISTERATIONS</span></h3>
+                <h3>STEP 1: <span>REGISTRATIONS</span></h3>
                 <p>Bands will register on the website and will be notified of the time and place of the venue and date of the preliminary round in their respective city. For online participants, the communication regarding the submission will be done separately.</p>
               </div>
             </div>}
@@ -79,7 +79,7 @@ const Timeline = () =>{
               <div className="card-border"></div>
               <div className="card-content">
               <h3>STEP 2: <span>PRELIMINARY ROUNDS</span></h3>
-                <p>Each band will be expected to perform live for 15-20 minutes at their respective city's venue. One winner from each city and one from each of the two online divisions will qualify for the final round which will be at BITS Pilani. There will be prizes for both winner and runner up at each city preliminary round.</p>
+                <p>Each band will be expected to perform live for 15-20 minutes at their respective city's venue. One winner from each city and one from each of the two online divisions will qualify for the final round which will be at BITS Pilani. There will be prizes for both winner and runner up at each city's preliminary round.</p>
               </div>
             </div>}
             {<div className="cards" style={{
@@ -90,7 +90,7 @@ const Timeline = () =>{
               <div className="card-border"></div>
               <div className="card-content">
                 <h3>STEP 3: <span>Finals at OASIS '23</span></h3>
-                <p>The qualifying bands will hbe invited to play at OASIS, the cultural fest of BITS Pilani and the winning band will walk away with the title of the Rocktaves winner at the 51st OASIS along with the prizes which will be revealed shortly. The rules for the same will be shared in due time.</p>
+                <p>The qualifying bands will be invited to play at OASIS, the cultural fest of BITS Pilani and the winning band will walk away with the title of the Rocktaves winner at the 51st OASIS along with the prizes which will be revealed shortly. The rules for the same will be shared in due time.</p>
               </div>
             </div>}
           </div>
