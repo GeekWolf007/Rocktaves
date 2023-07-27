@@ -7,7 +7,6 @@
   text-decoration: none;
   font-family: 'RocknRoll One', sans-serif;
   user-select: none;
-  cursor: none;
 }
 html {
   position: relative;
@@ -18,7 +17,6 @@ html {
   scroll-snap-type: y mandatory;
   -moz-scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  cursor: none;
 }
 .cursorHovered{
   transform: scale(1.75);
@@ -38,6 +36,7 @@ html {
   min-height: 200vh;
   scroll-snap-type: y mandatory;
   -moz-scroll-snap-type: y mandatory;
+  cursor: none;
 }
 section{
   overflow: hidden;
@@ -49,6 +48,7 @@ section{
 a{
   color: black;
   text-decoration: none;
+  cursor: none;
 }
 .headingWrapper{
   width: 100vw;
