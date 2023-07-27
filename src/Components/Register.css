@@ -107,8 +107,9 @@
   padding-left: 3%;
 }
 .contacts p{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: lightgrey;
+  font-family: Metal Mania;
 }
 .socials{
   padding-right: 5%;
@@ -132,7 +133,7 @@
     font-size: 1.75rem;
   }
   .contacts p{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .socials a svg{
     width: 1.2em;
@@ -149,7 +150,7 @@
     font-size: 1.5rem;
   }
   .contacts p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 @media (max-width:550px) {
@@ -174,6 +175,6 @@
 }
 @media (max-width:420px) {
   .connect p{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }

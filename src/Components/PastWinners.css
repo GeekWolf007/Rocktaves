@@ -66,6 +66,9 @@
   .pastWinner{
     flex-direction: column;
   }
+  .winnerImg{
+    background-position: center !important;
+  }
   .pastWinner1 h3{order: 2;}
   .pastWinner4 h3{order: 2;}
   .winnerImg{width: 100%;}
