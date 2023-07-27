@@ -2,6 +2,7 @@
   "name": "rocktaves",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://www.bits-oasis.org/rocktaves",
   "type": "module",
   "scripts": {
     "dev": "vite",
