@@ -54,6 +54,8 @@ const Form = ({handleGoBack}) => {
     const isPhoneNumberValid =
     /^\d{10}$/.test(contact1PhoneRef.current.value.trim()) &&
     /^\d{10}$/.test(contact2PhoneRef.current.value.trim());
+    console.log(contact1PhoneRef.current.value)
+    console.log(contact1PhoneRef.current.value.trim())
   
     if (!isPhoneNumberValid) {
       alert("Invalid phone number format. Please use 10 digits.");
@@ -78,7 +80,7 @@ const Form = ({handleGoBack}) => {
       name1: contact1NameRef.current.value,
       name2: contact2NameRef.current.value,
       name3: contact3NameRef.current.value,
-      email_address: emailRef.current.value,
+      email_address: emailRef.current.value.trim(),
     };
   
     const apiUrl = "https://bits-oasis.org/2023/main/preregistrations/RoctavesOnlineReg/";
