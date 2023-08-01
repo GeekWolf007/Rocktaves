@@ -41,8 +41,8 @@ const Form = ({handleGoBack}) => {
       return;
     }
   
-    const numberOfMembersValue = parseInt(numberOfMembersRef.current.value);
-    const yearOfInceptionValue = parseInt(yearOfInceptionRef.current.value);
+    const numberOfMembersValue = parseInt(numberOfMembersRef.current.value.trim());
+    const yearOfInceptionValue = parseInt(yearOfInceptionRef.current.value.trim());
     const isNumberOfMembersValid = !isNaN(numberOfMembersValue);
     const isYearOfInceptionValid = !isNaN(yearOfInceptionValue);
   
@@ -52,8 +52,8 @@ const Form = ({handleGoBack}) => {
     }
   
     const isPhoneNumberValid =
-    /^\d{10}$/.test(contact1PhoneRef.current.value) &&
-    /^\d{10}$/.test(contact2PhoneRef.current.value);
+    /^\d{10}$/.test(contact1PhoneRef.current.value.trim()) &&
+    /^\d{10}$/.test(contact2PhoneRef.current.value.trim());
   
     if (!isPhoneNumberValid) {
       alert("Invalid phone number format. Please use 10 digits.");
@@ -72,9 +72,9 @@ const Form = ({handleGoBack}) => {
       music_since: JSON.stringify(yearOfInceptionValue),
       city: cityBasedInRef.current.value,
       venue: selectedVenue,
-      phone: contact1PhoneRef.current.value,
-      phone2: contact2PhoneRef.current.value,
-      phone3: contact3PhoneRef.current.value,
+      phone: contact1PhoneRef.current.value.trim(),
+      phone2: contact2PhoneRef.current.value.trim(),
+      phone3: contact3PhoneRef.current.value.trim(),
       name1: contact1NameRef.current.value,
       name2: contact2NameRef.current.value,
       name3: contact3NameRef.current.value,
