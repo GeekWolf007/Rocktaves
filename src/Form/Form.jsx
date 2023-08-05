@@ -171,7 +171,7 @@ const Form = ({handleGoBack}) => {
           <div className="venue">
             <p className="venue__para">Venue you can contest in</p>
             <div className="inner_venue">
-            <input
+            {/* <input
               type="radio"
               name="venue"
               value="DELHI"
@@ -179,7 +179,7 @@ const Form = ({handleGoBack}) => {
               onChange={handleVenueChange}
               checked={selectedVenue === "DELHI"}
             />
-            <label htmlFor="delhi">DELHI</label>
+            <label htmlFor="delhi">DELHI</label> */}
             <input
               type="radio"
               name="venue"
