@@ -207,7 +207,7 @@ const Form = ({handleGoBack}) => {
               checked={selectedVenue === "MUMBAI"}
             />
             <label htmlFor="mumbai">MUMBAI</label>
-            <input
+              {/* <input
               type="radio"
               name="venue"
               value="KOLKATA"
@@ -215,7 +215,7 @@ const Form = ({handleGoBack}) => {
               onChange={handleVenueChange}
               checked={selectedVenue === "KOLKATA"}
             />
-            <label htmlFor="kolkata">KOLKATA</label>
+            <label htmlFor="kolkata">KOLKATA</label>*/}
             <input
               type="radio"
               name="venue"
