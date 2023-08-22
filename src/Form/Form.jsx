@@ -180,7 +180,8 @@ const Form = ({handleGoBack}) => {
               checked={selectedVenue === "DELHI"}
             />
             <label htmlFor="delhi">DELHI</label> */}
-            <input
+            {/*
+             <input
               type="radio"
               name="venue"
               value="BANGALORE"
@@ -189,7 +190,9 @@ const Form = ({handleGoBack}) => {
               checked={selectedVenue === "BANGALORE"}
             />
             <label htmlFor="bangalore">BANGALORE</label>
-            <input
+            
+            */}
+           <input
               type="radio"
               name="venue"
               value="CHENNAI"
