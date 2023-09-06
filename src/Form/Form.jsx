@@ -279,9 +279,9 @@ const Form = ({handleGoBack}) => {
         <button className="submitBtn" onClick={handleGoBack}>
           BACK
         </button>
-        <button type="submit" className="submitBtn" onClick={handleSubmit}>
+        {/*<button type="submit" className="submitBtn" onClick={handleSubmit}>
           REGISTER
-        </button>
+        </button>*/}
       </div>
       </div>
     </div>
