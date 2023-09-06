@@ -48,8 +48,8 @@ const LandingPage = ({}) =>{
     <div className="landingPageWrapper">
       <div className="cursor" id="cursor"></div>
       <div className="cursorFollower" id="cursorFollower"></div>
-      <div className="registerBtn">REGISTER</div>
-      <Link to="/form" className="registerBtn">REGISTER</Link>
+      {/*<div className="registerBtn">REGISTER</div>
+      <Link to="/form" className="registerBtn">REGISTER</Link>*/}
       <section className="headingWrapper">
         <div className="fixedBG"></div>
         <Heading />
